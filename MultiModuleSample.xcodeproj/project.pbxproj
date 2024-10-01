@@ -13,6 +13,13 @@
 		04B3BAC22CAC0E8400CB3B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B3BAC02CAC0E8400CB3B76 /* Main.storyboard */; };
 		04B3BAC42CAC0E8500CB3B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B3BAC32CAC0E8500CB3B76 /* Assets.xcassets */; };
 		04B3BAC72CAC0E8500CB3B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B3BAC52CAC0E8500CB3B76 /* LaunchScreen.storyboard */; };
+		04B3BAD12CAC0F4500CB3B76 /* TCDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 04B3BAD02CAC0F4500CB3B76 /* TCDCore */; };
+		04B3BAD32CAC0F6500CB3B76 /* SharedModels in Frameworks */ = {isa = PBXBuildFile; productRef = 04B3BAD22CAC0F6500CB3B76 /* SharedModels */; };
+		04B3BAD52CAC0F6900CB3B76 /* TCDDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 04B3BAD42CAC0F6900CB3B76 /* TCDDomain */; };
+		04B3BAD72CAC0FDD00CB3B76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3BAD62CAC0FDD00CB3B76 /* ViewModel.swift */; };
+		04B3BAD92CAC102700CB3B76 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3BAD82CAC102700CB3B76 /* ViewModelProtocol.swift */; };
+		04B3BADB2CAC15FF00CB3B76 /* ViewModel+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3BADA2CAC15FF00CB3B76 /* ViewModel+Init.swift */; };
+		04B3BADD2CAC163C00CB3B76 /* TCDData in Frameworks */ = {isa = PBXBuildFile; productRef = 04B3BADC2CAC163C00CB3B76 /* TCDData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,10 @@
 		04B3BAC32CAC0E8500CB3B76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B3BAC62CAC0E8500CB3B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B3BAC82CAC0E8500CB3B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B3BACE2CAC0EC200CB3B76 /* AppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackage; sourceTree = "<group>"; };
+		04B3BAD62CAC0FDD00CB3B76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		04B3BAD82CAC102700CB3B76 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		04B3BADA2CAC15FF00CB3B76 /* ViewModel+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Init.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B3BADD2CAC163C00CB3B76 /* TCDData in Frameworks */,
+				04B3BAD12CAC0F4500CB3B76 /* TCDCore in Frameworks */,
+				04B3BAD52CAC0F6900CB3B76 /* TCDDomain in Frameworks */,
+				04B3BAD32CAC0F6500CB3B76 /* SharedModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +55,10 @@
 		04B3BAAE2CAC0E8400CB3B76 = {
 			isa = PBXGroup;
 			children = (
+				04B3BACE2CAC0EC200CB3B76 /* AppPackage */,
 				04B3BAB92CAC0E8400CB3B76 /* MultiModuleSample */,
 				04B3BAB82CAC0E8400CB3B76 /* Products */,
+				04B3BACF2CAC0F4500CB3B76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,22 @@
 				04B3BABA2CAC0E8400CB3B76 /* AppDelegate.swift */,
 				04B3BABC2CAC0E8400CB3B76 /* SceneDelegate.swift */,
 				04B3BABE2CAC0E8400CB3B76 /* ViewController.swift */,
+				04B3BAD62CAC0FDD00CB3B76 /* ViewModel.swift */,
+				04B3BADA2CAC15FF00CB3B76 /* ViewModel+Init.swift */,
+				04B3BAD82CAC102700CB3B76 /* ViewModelProtocol.swift */,
 				04B3BAC02CAC0E8400CB3B76 /* Main.storyboard */,
 				04B3BAC32CAC0E8500CB3B76 /* Assets.xcassets */,
 				04B3BAC52CAC0E8500CB3B76 /* LaunchScreen.storyboard */,
 				04B3BAC82CAC0E8500CB3B76 /* Info.plist */,
 			);
 			path = MultiModuleSample;
+			sourceTree = "<group>";
+		};
+		04B3BACF2CAC0F4500CB3B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,12 @@
 			dependencies = (
 			);
 			name = MultiModuleSample;
+			packageProductDependencies = (
+				04B3BAD02CAC0F4500CB3B76 /* TCDCore */,
+				04B3BAD22CAC0F6500CB3B76 /* SharedModels */,
+				04B3BAD42CAC0F6900CB3B76 /* TCDDomain */,
+				04B3BADC2CAC163C00CB3B76 /* TCDData */,
+			);
 			productName = MultiModuleSample;
 			productReference = 04B3BAB72CAC0E8400CB3B76 /* MultiModuleSample.app */;
 			productType = "com.apple.product-type.application";
@@ -139,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B3BABF2CAC0E8400CB3B76 /* ViewController.swift in Sources */,
+				04B3BAD92CAC102700CB3B76 /* ViewModelProtocol.swift in Sources */,
+				04B3BADB2CAC15FF00CB3B76 /* ViewModel+Init.swift in Sources */,
 				04B3BABB2CAC0E8400CB3B76 /* AppDelegate.swift in Sources */,
+				04B3BAD72CAC0FDD00CB3B76 /* ViewModel.swift in Sources */,
 				04B3BABD2CAC0E8400CB3B76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04B3BAD02CAC0F4500CB3B76 /* TCDCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCDCore;
+		};
+		04B3BAD22CAC0F6500CB3B76 /* SharedModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedModels;
+		};
+		04B3BAD42CAC0F6900CB3B76 /* TCDDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCDDomain;
+		};
+		04B3BADC2CAC163C00CB3B76 /* TCDData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCDData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04B3BAAF2CAC0E8400CB3B76 /* Project object */;
 }
